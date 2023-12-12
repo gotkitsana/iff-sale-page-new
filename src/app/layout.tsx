@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Kanit } from "next/font/google"
 import './globals.css'
 import { NextUIProviders } from '@/provider/NextUI'
+import AOSInit from '@/provider/aos'
 
 const kanit = Kanit({ weight: ['300','400', '500', '600', '700'], subsets: ['thai'] })
 
@@ -42,6 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='dark'>
+      <AOSInit />
       <body className={kanit.className}>
         <NextUIProviders>
           {children}
