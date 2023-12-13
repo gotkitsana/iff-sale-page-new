@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'The Best Koi you will ever need ฟาร์มปลาคาร์พนำเข้าจากประเทศญี่ปุ่นระดับพรีเมียมไซต์ใหญ่พร้อมส่ง',
     images: [
       {
-        url: '/logo-img.png',
+        url: '/logo-new.png',
         width: 1000,
         height: 1000,
         type: 'image/png',
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     siteName: 'Inter Fish Farm',
   },
   icons: {
-    icon: '/logo-icon.png',
-    shortcut: '/logo-icon.png',
-    apple: '/logo-icon.png',
+    icon: '/logo-icon-new.png',
+    shortcut: '/logo-icon-new.png',
+    apple: '/logo-icon-new.png',
     other: {
       rel: 'iff-logo',
-      url: '/logo-icon.png',
+      url: '/logo-icon-new.png',
     },
   },
 }

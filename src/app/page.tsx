@@ -10,7 +10,7 @@ export default function Home() {
     <div className='flex flex-col scroll-smooth bg-black'>
       <section id="01" className=' h-full w-full bg-[url(/image/bg/section-1.jpg)] bg-center bg-cover'>
         <div className='flex justify-center my-4 '>
-          <Image src="/logo.png" alt="logo" width="100%" className='max-w-[10rem]' />
+          <Image src="/logo-new.png" alt="logo" width="100%" className='max-w-[12.5rem]' />
         </div>
 
         <p className='text-center font-medium text-3xl text-white'>สอบถามสายพันธ์ และ ราคาปลา</p>
@@ -25,7 +25,7 @@ export default function Home() {
 
         <div className=' relative flex flex-col max-w-4xl mx-auto pt-2 pb-10 md:h-[53rem]'>
           <div className='flex flex-col md:grid md:grid-cols-2'>
-            <Image src="/image/fish/kohaku.png" alt="logo" width="100%" className='max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-[unset]' />
+            <Image src="/image/fish/kohaku.png" alt="fish" width="100%" className='max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-[unset]' />
 
             <div className='flex flex-row items-center gap-x-6 px-10 md:px-0 '>
               <Divider orientation="vertical" className='h-28 w-[1px] bg-white' />
@@ -49,11 +49,11 @@ export default function Home() {
               </div>
             </div>
 
-            <Image src="/image/fish/tancho.png" alt="logo" width="100%" className='max-w-sm md:max-w-md mx-auto md:mr-auto md:ml-[unset]' />
+            <Image src="/image/fish/tancho.png" alt="fish" width="100%" className='max-w-sm md:max-w-md mx-auto md:mr-auto md:ml-[unset]' />
           </div>
 
           <div className='flex flex-col md:grid md:grid-cols-2 md:absolute md:bottom-0'>
-            <Image src="/image/fish/sanke-re.png" alt="logo" width="100%"
+            <Image src="/image/fish/sanke-re.png" alt="fish" width="100%"
               className='max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-[unset] '
               style={{
                 transform: "scaleX(-1)"
