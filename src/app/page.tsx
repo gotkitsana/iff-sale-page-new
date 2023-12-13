@@ -7,13 +7,13 @@ import Footer from './Footer';
 export default function Home() {
 
   return (
-    <div className='flex flex-col scroll-smooth '>
+    <div className='flex flex-col scroll-smooth bg-black'>
       <section id="01" className=' h-full w-full bg-[url(/image/bg/section-1.jpg)] bg-center bg-cover'>
         <div className='flex justify-center my-4 '>
           <Image src="/logo.png" alt="logo" width="100%" className='max-w-[10rem]' />
         </div>
 
-        <p className='text-center font-medium text-3xl'>สอบถามสายพันธ์ และ ราคาปลา</p>
+        <p className='text-center font-medium text-3xl text-white'>สอบถามสายพันธ์ และ ราคาปลา</p>
 
         <div className=' flex flex-col items-center gap-y-2 mt-4'>
           <button className=' hover:brightness-125 hover:text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
@@ -24,13 +24,12 @@ export default function Home() {
         </div>
 
         <div className=' relative flex flex-col max-w-4xl mx-auto pt-2 pb-10 md:h-[53rem]'>
-          <div
-            className='flex flex-col md:grid md:grid-cols-2'>
+          <div className='flex flex-col md:grid md:grid-cols-2'>
             <Image src="/image/fish/kohaku.png" alt="logo" width="100%" className='max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-[unset]' />
 
             <div className='flex flex-row items-center gap-x-6 px-10 md:px-0 '>
               <Divider orientation="vertical" className='h-28 w-[1px] bg-white' />
-              <div>
+              <div className='text-white'>
                 <p className=' font-medium text-xl'>KOHAKU</p>
                 <p className='text-sm md:text-base py-1 font-[300]'>ถือว่าเป็นราชินีแห่งปลาคาร์ฟ เป็นปลาที่มี 2 สี</p>
                 <p className='text-sm md:text-base font-[300]'>ที่มีสีแดงวางอยู่บนพื้นหลังขาว</p>
@@ -38,11 +37,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className='flex flex-col-reverse md:grid md:grid-cols-2 md:absolute md:top-[14rem]'>
+          <div className='flex flex-col-reverse md:grid md:grid-cols-2 md:absolute md:top-[14rem]'>
             <div className=' flex flex-row items-center gap-x-6 px-10 md:px-0'>
               <Divider orientation="vertical" className='h-32 w-[1px] bg-white' />
-              <div>
+              <div className='text-white'>
                 <p className=' font-medium text-xl'>TANCHO</p>
                 <p className='text-sm md:text-base pt-1 font-[300]'>
                   ปลาตันโจที่ดี ควรมีสีแดงกลม และขนาดใหญ่ได้สัดส่วนบันหัวเท่านั้น
@@ -54,8 +52,7 @@ export default function Home() {
             <Image src="/image/fish/tancho.png" alt="logo" width="100%" className='max-w-sm md:max-w-md mx-auto md:mr-auto md:ml-[unset]' />
           </div>
 
-          <div
-            className='flex flex-col md:grid md:grid-cols-2 md:absolute md:bottom-0'>
+          <div className='flex flex-col md:grid md:grid-cols-2 md:absolute md:bottom-0'>
             <Image src="/image/fish/sanke-re.png" alt="logo" width="100%"
               className='max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-[unset] '
               style={{
@@ -64,7 +61,7 @@ export default function Home() {
 
             <div className='flex flex-row items-center gap-x-6 px-10 md:px-0'>
               <Divider orientation="vertical" className='h-32 w-[1px] bg-white' />
-              <div>
+              <div className='text-white'>
                 <p className=' font-medium text-xl'>SANKE</p>
                 <p className='text-sm md:text-base pt-1 font-[300]'>
                   หรือ TAISHO SANSHOKU ปลาคาร์ฟที่มี 3 สี สีขาว สีแดง และสีดำ สีดำบนตัวปลานั้น
@@ -79,19 +76,19 @@ export default function Home() {
       <section id="02" className='antialiased h-full w-full bg-[url(/image/bg/section-2.png)] bg-left md:bg-center bg-cover'>
         <div className='flex flex-col items-center bg-black/20 pb-10 md:pt-10' >
           <p data-aos="fade-up"
-            className={`text-2xl md:text-3xl lg:text-4xl my-10 font-medium `}>
+            className={`text-2xl md:text-3xl lg:text-4xl my-10 font-medium text-white`}>
             ทำไมถึงต้องเลือก <span className='text-yellow-500'>อินเตอร์ฟิช ฟาร์ม</span> ?
           </p>
 
           <div className='max-w-lg lg:max-w-2xl w-full mx-auto px-2 md:px-0'>
             <div data-aos="fade-up"
               className='flex flex-row gap-x-2 lg:gap-x-4 pb-4 lg:pb-8'>
-              <p className=' flex-none md:text-lg lg:text-xl'>&#x2022;</p>
-              <div className='flex-auto md:text-lg lg:text-xl'>
-                <p className='text-center '>
+              <p className=' flex-none md:text-lg lg:text-xl text-white'>&#x2022;</p>
+              <div className='flex-auto md:text-lg lg:text-xl '>
+                <p className='text-center text-white'>
                   อินเตอร์ฟิช ฟาร์ม นำเข้าปลาคาร์ฟ จากฟาร์ม อันดับ 1
                 </p>
-                <p className='text-center '>
+                <p className='text-center text-white'>
                   ของโลก SAKAI FISH FARM และฟาร์มชั้นนำในญี่ปุ่น
                 </p>
               </div>
@@ -99,9 +96,9 @@ export default function Home() {
 
             <div data-aos="fade-up"
               className='flex flex-row gap-x-2 lg:gap-x-4 pb-4 lg:pb-8'>
-              <p className=' flex-none md:text-lg lg:text-xl'>&#x2022;</p>
-              <div className='flex-auto md:text-lg lg:text-xl'>
-                <p className='text-center '>
+              <p className=' flex-none md:text-lg lg:text-xl text-white'>&#x2022;</p>
+              <div className='flex-auto md:text-lg lg:text-xl '>
+                <p className='text-center text-white'>
                   อินเตอร์ฟิช ฟาร์ม มีแม่พันธุ์ที่ฝากเลี้ยง และ BREED เองที่ SAKAI FISH FARM
                 </p>
               </div>
@@ -109,9 +106,9 @@ export default function Home() {
 
             <div data-aos="fade-up"
               className='flex flex-row gap-x-2 lg:gap-x-4 pb-4 lg:pb-8'>
-              <p className=' flex-none md:text-lg lg:text-xl'>&#x2022;</p>
+              <p className=' flex-none md:text-lg lg:text-xl text-white'>&#x2022;</p>
               <div className='flex-auto md:text-lg lg:text-xl'>
-                <p className='text-center '>
+                <p className='text-center text-white'>
                   อินเตอร์ฟิช ฟาร์ม มีระบบการจัดการ ที่เป็นมาตรฐาน พร้อมดูแลจัดส่งทั่วประเทศไทยและต่างประเทศ
                 </p>
               </div>
@@ -119,9 +116,9 @@ export default function Home() {
 
             <div data-aos="fade-up"
               className='flex flex-row gap-x-2 lg:gap-x-4 pb-4 lg:pb-8'>
-              <p className=' flex-none md:text-lg lg:text-xl'>&#x2022;</p>
+              <p className=' flex-none md:text-lg lg:text-xl text-white'>&#x2022;</p>
               <div className='flex-auto md:text-lg lg:text-xl'>
-                <p className='text-center '>
+                <p className='text-center text-white'>
                   เป็นฟาร์มอันดับ 1 ในภาคเหนือ ที่มีภูมิอากาศที่ดีทำให้ปลานั้นคุณภาพดีเหมือนพึ่งมาจากญี่ปุ่น
                 </p>
               </div>
@@ -142,12 +139,12 @@ export default function Home() {
       </section>
 
 
-      <section id="03" className='antialiased h-full w-full relative'>
+      <section id="03" className='antialiased h-full w-full relative '>
         <div className='pb-3 md:pb-6 pt-8 lg:pt-14 w-full grid grid-cols-6 md:grid-cols-5 items-center'>
           <Divider className=' col-span-2 bg-white' />
           <div className='text-center col-span-2 md:col-span-1 '>
-            <p className='text-3xl md:text-4xl font-medium'>OYAGOI</p>
-            <p className=' md:text-xl font-medium'>พ่อแม่พันธุ์ปลา</p>
+            <p className='text-3xl md:text-4xl font-medium text-white'>OYAGOI</p>
+            <p className=' md:text-xl font-medium text-white'>พ่อแม่พันธุ์ปลา</p>
           </div>
           <Divider className=' col-span-2 bg-white' />
         </div>
@@ -159,7 +156,7 @@ export default function Home() {
               <div data-aos="fade-up"
                 className='flex flex-row gap-6 md:flex-col items-center justify-center md:justify-between'>
                 <Image src="/image/fish/sc-3/barley.png" alt="barley" width="100%" className='w-[5rem] md:w-[7.5rem] lg:w-[10rem] mx-auto' />
-                <div>
+                <div className='text-white'>
                   <p>バーレイ Barley</p>
                   <p>ライスヴァリーの子</p>
                   <p>Offspring of Rise Valley</p>
@@ -170,7 +167,7 @@ export default function Home() {
               <div data-aos="fade-up" data-aos-delay="150"
                 className='flex flex-row gap-6 md:flex-col items-center justify-center md:justify-between'>
                 <Image src="/image/fish/sc-3/simple-love.png" alt="simple-love" width="100%" className='w-[5rem] md:w-[7.5rem] lg:w-[10rem] mx-auto' />
-                <div>
+                <div className='text-white'>
                   <p>シンプルラブ III Simple Love III</p>
                   <p>シンプルラブの子</p>
                   <p>Offspring of Simple Love</p>
@@ -181,7 +178,7 @@ export default function Home() {
               <div data-aos="fade-up" data-aos-delay="300"
                 className='flex flex-row gap-6 md:flex-col items-center justify-center md:justify-between'>
                 <Image src="/image/fish/sc-3/luna.png" alt="luna" width="100%" className='w-[5rem] md:w-[7.5rem] lg:w-[10rem] mx-auto' />
-                <div>
+                <div className='text-white'>
                   <p>ルナ Luna</p>
                   <p>ミスタイの子</p>
                   <p>Offspring of Miss Thai</p>
@@ -198,15 +195,15 @@ export default function Home() {
         <div className='pb-6 pt-8 lg:pt-14 w-full grid grid-cols-7 md:grid-cols-4 xl:grid-cols-3 items-center md:absolute md:bottom-10 xl:bottom-28 left-0 right-0 z-50'>
           <Divider className='  bg-white' />
           <div className='text-center col-span-5 md:col-span-2 xl:col-span-1'>
-            <p className='text-xl md:text-2xl lg:text-4xl font-medium'>List of Award-Winning Carp</p>
-            <p className='md:text-lg lg:text-2xl font-medium'>รายการรางวัลของเรา</p>
+            <p className='text-xl md:text-2xl lg:text-4xl font-medium text-white'>List of Award-Winning Carp</p>
+            <p className='md:text-lg lg:text-2xl font-medium text-white'>รายการรางวัลของเรา</p>
           </div>
           <Divider className='  bg-white' />
         </div>
       </section>
 
       <section id="04" className=' relative md:-top-6 xl:-top-16 md:px-6 lg:px-0'>
-        <div className='max-w-3xl mx-auto grid grid-cols-2 md:flex md:flex-row md:justify-between pb-6 md:pb-10 lg:pb-20'>
+        <div className='max-w-3xl gap-x-1 md:gap-x-0 mx-auto grid grid-cols-2 md:flex md:flex-row md:justify-between pb-6 md:pb-10 lg:pb-20'>
           <div className='max-w-[12rem] md:max-w-[13rem] mx-auto md:mx-[unset] h-full overflow-hidden'>
             <Image src="/image/fish/award/1.jpg" alt="barley" width="100%" radius="none" />
             <div className='bg-white text-black p-1 h-full'>
@@ -232,7 +229,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='max-w-3xl mx-auto grid grid-cols-2 md:flex md:flex-row  md:justify-between'>
+        <div className='max-w-3xl mx-auto gap-x-1 md:gap-x-0 grid grid-cols-2 md:flex md:flex-row  md:justify-between'>
           <div className='max-w-[12rem] md:max-w-[13rem] mx-auto md:mx-[unset] h-full overflow-hidden'>
             <Image src="/image/fish/award/3.jpg" alt="barley" width="100%" radius="none" />
             <div className='bg-white text-black  p-1 h-full'>
@@ -267,12 +264,11 @@ export default function Home() {
 
       </section>
 
-      <section id="05" className='px-10'>
-        <Divider className='bg-white' />
+      <section id="05" className='px-2 md:px-6' >
+        <Divider className='bg-white lg:w-[95%] mx-auto' />
 
-        <div data-aos="fade-up" className=' relative max-w-3xl mx-auto mt-10'>
+        <div data-aos="fade-up" className=' relative max-w-3xl mx-auto mt-6 xl:mt-10'>
           <Image src="/image/banner/01.jpg" alt="banner" radius='none' width="100%" />
-
         </div>
       </section>
 
