@@ -205,7 +205,8 @@ export default function Home() {
       </section>
 
       <section id="04" className=' relative md:-top-6 xl:-top-16 md:px-6 lg:px-0'>
-        <div className='max-w-3xl gap-x-1 md:gap-x-0 mx-auto grid grid-cols-2 md:flex md:flex-row md:justify-between pb-6 md:pb-10 lg:pb-20'>
+        {/* lg:pb-20 */}
+        <div className='max-w-3xl gap-x-1 md:gap-x-0 mx-auto grid grid-cols-2 md:flex md:flex-row md:justify-between pb-6 md:pb-10 lg:pb-10'>
           <div className='max-w-[12rem] md:max-w-[13rem] mx-auto md:mx-[unset] h-full overflow-hidden'>
             <Image src="/image/fish/award/1.jpg" alt="barley" width="100%" radius="none" />
             <div className='bg-white text-black p-1 h-full'>
@@ -218,20 +219,36 @@ export default function Home() {
             <Image src="/image/fish/award/2.jpg" alt="barley" width="100%" radius="none" />
             <div className='bg-white text-black p-1 h-full'>
               <p className='text-center text-sm'>TNPA ATKS 2023</p>
-              <p className='text-center text-sm'>Winner Showa Sanshoku 85 BU</p>
+              <p className='text-center text-sm'>Male Kokugyo Prize 85 BU</p>
+            </div>
+          </div>
+
+          <div className=' hidden md:block max-w-[12rem] md:max-w-[13rem] mx-auto md:mx-[unset] h-full overflow-hidden'>
+            <Image src="/image/fish/award/3.jpg" alt="barley" width="100%" radius="none" />
+            <div className='bg-white text-black p-1 h-full'>
+              <p className='text-center text-sm'>TNPA ATKS 2023</p>
+              <p className='text-center text-sm'>2nd Runner up Kohaku 40 Bu</p>
             </div>
           </div>
         </div>
 
-        <div className='block md:hidden max-w-[12rem] mx-auto h-full overflow-hidden pb-6'>
+        {/* <div className='block md:hidden max-w-[12rem] mx-auto h-full overflow-hidden pb-6'>
           <Image src="/image/fish/award/2.jpg" alt="barley" width="100%" radius="none" />
           <div className='bg-white text-black p-1 '>
             <p className='text-center text-sm'>TNPA ATKS 2023</p>
             <p className='text-center text-sm'>Male Kokugyo Prize 85 BU</p>
           </div>
+        </div> */}
+
+        <div className='block md:hidden max-w-[12rem] mx-auto h-full overflow-hidden '>
+          <Image src="/image/fish/award/3.jpg" alt="barley" width="100%" radius="none" />
+          <div className='bg-white text-black p-1 '>
+            <p className='text-center text-sm'>TNPA ATKS 2023</p>
+            <p className='text-center text-sm'>2nd Runner up Kohaku 40 Bu</p>
+          </div>
         </div>
 
-        <div className='max-w-3xl mx-auto gap-x-1 md:gap-x-0 grid grid-cols-2 md:flex md:flex-row  md:justify-between'>
+        {/* <div className='max-w-3xl mx-auto gap-x-1 md:gap-x-0 grid grid-cols-2 md:flex md:flex-row  md:justify-between'>
           <div className='max-w-[12rem] md:max-w-[13rem] mx-auto md:mx-[unset] h-full overflow-hidden'>
             <Image src="/image/fish/award/3.jpg" alt="barley" width="100%" radius="none" />
             <div className='bg-white text-black  p-1 h-full'>
@@ -255,9 +272,17 @@ export default function Home() {
               <p className='text-center text-sm'>Winner Showa Sanshoku 65 BU</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className='flex justify-center my-8 md:mb-0 xl:mt-10'>
+        {/* <div className='flex justify-center my-8 md:mb-0 mt-0 xl:mt-10'>
+          <a href={line} target='_blank'
+            className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+          text-lg px-10 py-1 rounded-xl '>
+            สนใจสอบถาม
+          </a>
+        </div> */}
+
+        <div className='flex justify-center my-8 md:my-0'>
           <a href={line} target='_blank'
             className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
           text-lg px-10 py-1 rounded-xl '>
@@ -267,19 +292,45 @@ export default function Home() {
 
       </section>
 
-      <section id="05" className='px-2 md:px-6 mb-10' >
+      <section id="05" className='px-2 md:px-6 mb-10 antialiased' >
         <Divider className='bg-white lg:w-[95%] mx-auto' />
 
-        <div data-aos="fade-up" className=' relative max-w-3xl mx-auto mt-6 xl:mt-10 '>
+        <div data-aos="fade-up" className=' aspect-[3/1] relative max-w-3xl mx-auto mt-6 xl:mt-10 '>
           <div className='bg-black/10 flex justify-center items-center w-full h-full absolute top-0 z-20'>
             <a href={line} target='_blank'
               className='hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
-              md:text-lg px-6 md:px-10 py-1 rounded-xl shadow-lg shadow-black/70 antialiased '>
+              md:text-lg px-6 md:px-12 py-1 rounded-xl shadow-lg shadow-black/70  font-medium'>
               สั่งซื้ออาหาร
             </a>
           </div>
 
-          <Image src="/image/banner/01.jpg" alt="banner" radius='none' width="100%" />
+          <Image src="/image/banner/01.jpg" alt="banner" removeWrapper radius='none' className='w-full h-full'  />
+        </div>
+
+        <div data-aos="fade-up" className='my-2 aspect-[3/1] relative max-w-3xl mx-auto mt-6 xl:mt-10 '>
+          <div className=' flex flex-col gap-y-2 justify-center items-center w-full h-full absolute top-0 z-20'>
+            <a href={line} target='_blank'
+              className='hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+              md:text-lg px-6 md:px-12 py-1 rounded-xl shadow-lg shadow-black/70  font-medium '>
+              I.F.F SERVICE
+            </a>
+            <p className='text-center text-sm md:text-base '>บริการสร้างบ่อ - บริการล้างบ่อกรอง - บริการฝากเลี้ยง - บริการรักษาปลา</p>
+          </div>
+
+          <Image src="/image/banner/02.png" alt="banner" removeWrapper radius='none' className='w-full h-full object-cover' />
+        </div>
+
+        <div data-aos="fade-up" className='my-2 aspect-[3/1] relative max-w-3xl mx-auto mt-6 xl:mt-10 '>
+          <div className='bg-black/30 flex flex-col gap-y-2 justify-center items-center w-full h-full absolute top-0 z-20'>
+            <a href={line} target='_blank'
+              className='hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+              md:text-lg px-6 md:px-12 py-1 rounded-xl shadow-lg shadow-black/70 font-medium '>
+              รีวิวจากลูกค้า
+            </a>
+            <p className='text-center text-sm md:text-base '>พร้อมบริการจัดส่งทั่วประเทศ รับประกันการจัดส่ง</p>
+          </div>
+
+          <Image src="/image/banner/03.png" alt="banner" removeWrapper radius='none' className='w-full h-full object-cover object-top' />
         </div>
       </section>
 
