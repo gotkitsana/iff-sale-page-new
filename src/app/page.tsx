@@ -45,7 +45,7 @@ export default function Home() {
               <div className='text-white'>
                 <p className=' font-medium text-xl'>TANCHO</p>
                 <p className='text-sm md:text-base pt-1 font-[300]'>
-                  ปลาตันโจที่ดี ควรมีสีแดงกลม และขนาดใหญ่ได้สัดส่วนบันหัวเท่านั้น
+                  ปลาตันโจที่ดี ควรมีสีแดงกลม และขนาดใหญ่ได้สัดส่วนบนหัวเท่านั้น
                   แม้รูปทรงไม่ได้เป็นทรงกลม และไม่มีลวดลายสีแดงที่จุดอื่นๆ ที่ลำตัว
                 </p>
               </div>
@@ -274,7 +274,7 @@ export default function Home() {
           <div className='bg-black/10 flex justify-center items-center w-full h-full absolute top-0 z-20'>
             <a href={line} target='_blank'
               className='hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
-              text-lg px-10 py-1 rounded-xl shadow-lg shadow-black/70 antialiased '>
+              md:text-lg px-6 md:px-10 py-1 rounded-xl shadow-lg shadow-black/70 antialiased '>
               สั่งซื้ออาหาร
             </a>
           </div>
