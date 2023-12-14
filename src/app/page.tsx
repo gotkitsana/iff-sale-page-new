@@ -5,6 +5,7 @@ import Footer from './Footer';
 
 
 export default function Home() {
+  const line = 'https://line.me/R/ti/p/@022awchp'
 
   return (
     <div className='flex flex-col scroll-smooth bg-black'>
@@ -16,10 +17,11 @@ export default function Home() {
         <p className='text-center font-medium text-3xl text-white'>สอบถามสายพันธ์ และ ราคาปลา</p>
 
         <div className=' flex flex-col items-center gap-y-2 mt-4'>
-          <button className=' hover:brightness-125 hover:text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+          <a href={line} target='_blank'
+            className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
           text-lg px-14 py-1 rounded-xl '>
             คลิกเลย
-          </button>
+          </a>
           <p className='text-yellow-500 text-sm'>กดรับราคาพิเศษ ภายในวันที่ 30 ธ.ค. นี้เท่านั้น</p>
         </div>
 
@@ -126,10 +128,10 @@ export default function Home() {
 
             <div data-aos="fade-up"
               className=' flex justify-center mt-4'>
-              <button className=' hover:brightness-125 hover:text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+              <a href={line} target='_blank' className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
           lg:text-xl px-14 py-1 font-medium rounded-xl '>
                 สนใจสอบถาม
-              </button>
+              </a>
             </div>
 
           </div>
@@ -256,24 +258,33 @@ export default function Home() {
         </div>
 
         <div className='flex justify-center my-8 md:mb-0 xl:mt-10'>
-          <button className=' hover:brightness-125 hover:text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+          <a href={line} target='_blank'
+            className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
           text-lg px-10 py-1 rounded-xl '>
             สนใจสอบถาม
-          </button>
+          </a>
         </div>
 
       </section>
 
-      <section id="05" className='px-2 md:px-6' >
+      <section id="05" className='px-2 md:px-6 mb-10' >
         <Divider className='bg-white lg:w-[95%] mx-auto' />
 
-        <div data-aos="fade-up" className=' relative max-w-3xl mx-auto mt-6 xl:mt-10'>
+        <div data-aos="fade-up" className=' relative max-w-3xl mx-auto mt-6 xl:mt-10 '>
+          <div className='bg-black/10 flex justify-center items-center w-full h-full absolute top-0 z-20'>
+            <a href={line} target='_blank'
+              className='hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+              text-lg px-10 py-1 rounded-xl shadow-lg shadow-black/70 antialiased '>
+              สั่งซื้ออาหาร
+            </a>
+          </div>
+
           <Image src="/image/banner/01.jpg" alt="banner" radius='none' width="100%" />
         </div>
       </section>
 
 
-      <Footer />
+      <Footer line={line} />
 
 
     </div>
