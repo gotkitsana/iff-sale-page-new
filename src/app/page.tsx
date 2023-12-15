@@ -205,6 +205,7 @@ export default function Home() {
       </section> */}
 
       <section id="03" className='antialiased h-full w-full relative mb-4'>
+        
         <div className='bg-black/40 relative z-50 pb-10'>
           <div className='pb-6 pt-8 lg:pt-14 w-full grid grid-cols-7 md:grid-cols-4 xl:grid-cols-3 items-center'>
             <Divider className=' bg-white' />
@@ -287,7 +288,7 @@ export default function Home() {
 
           </div> */}
 
-          <div className='flex justify-center my-4 lg:mt-10'>
+          <div className='flex justify-center my-6 lg:mt-10'>
             <a href={line} target='_blank'
               className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
           text-lg px-10 py-1 rounded-xl '>
@@ -296,9 +297,11 @@ export default function Home() {
           </div>
 
         </div>
+
         <div className=' absolute bottom-0 left-0 right-0 z-0 max-w-[1780px] mx-auto'>
           <Image src="/image/bg/section-3.png" alt="bg" radius="none" className='mx-auto' />
         </div>
+
       </section>
 
       {/* <section id="04" className=' relative md:-top-6 xl:-top-16 md:px-6 lg:px-0'>
