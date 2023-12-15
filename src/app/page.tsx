@@ -288,7 +288,7 @@ export default function Home() {
 
           </div> */}
 
-          <div className='flex justify-center my-6 lg:mt-10'>
+          <div className='flex justify-center my-6 lg:my-10'>
             <a href={line} target='_blank'
               className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
           text-lg px-10 py-1 rounded-xl '>
@@ -297,7 +297,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=' absolute bottom-0 left-0 right-0 z-0 max-w-[1780px] mx-auto'>
+        <div className=' absolute bottom-0 left-0 right-0 z-0 max-w-[1980px] mx-auto'>
           <Image src="/image/bg/section-3.png" alt="bg" radius="none" className='mx-auto' />
         </div>
 

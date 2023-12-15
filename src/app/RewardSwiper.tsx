@@ -71,7 +71,7 @@ const RewardSwiper = () => {
       }}
       loop
       modules={[Autoplay]}
-      className="mySwiper max-w-5xl mx-auto mt-4 px-2"
+      className="mySwiper max-w-6xl mx-auto mt-4 lg:mt-10"
     >
       {data?.map((item,index)=>(
         <SwiperSlide key={index} >
