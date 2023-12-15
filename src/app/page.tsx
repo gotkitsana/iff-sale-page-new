@@ -408,7 +408,7 @@ export default function Home() {
       </section>
 
 
-      <Footer line={line} />
+      {/* <Footer line={line} /> */}
 
 
     </div>
