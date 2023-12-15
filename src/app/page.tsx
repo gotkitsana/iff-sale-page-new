@@ -2,7 +2,7 @@
 import { Button, Divider, Image } from '@nextui-org/react'
 import { useRef } from 'react';
 import Footer from './Footer';
-
+import RewardSwiper from './RewardSwiper';
 
 export default function Home() {
   const line = 'https://line.me/R/ti/p/@022awchp'
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="02" className='antialiased h-full w-full bg-[url(/image/bg/section-2.png)] bg-left md:bg-center bg-cover'>
+      <section id="02" className=' relative z-50 antialiased h-full w-full bg-[url(/image/bg/section-2.png)] bg-left md:bg-center bg-cover'>
         <div className='flex flex-col items-center bg-black/20 pb-10 md:pt-10' >
           <p data-aos="fade-up"
             className={`text-2xl md:text-3xl lg:text-4xl my-10 font-medium text-white`}>
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
 
-      <section id="03" className='antialiased h-full w-full relative '>
+      {/* <section id="03" className='antialiased h-full w-full relative '>
         <div className='pb-3 md:pb-6 pt-8 lg:pt-14 w-full grid grid-cols-6 md:grid-cols-5 items-center'>
           <Divider className=' col-span-2 bg-white' />
           <div className='text-center col-span-2 md:col-span-1 '>
@@ -202,11 +202,107 @@ export default function Home() {
           </div>
           <Divider className='  bg-white' />
         </div>
+      </section> */}
+
+      <section id="03" className='antialiased h-full w-full relative mb-4'>
+        <div className='bg-black/40 relative z-50 pb-10'>
+          <div className='pb-6 pt-8 lg:pt-14 w-full grid grid-cols-7 md:grid-cols-4 xl:grid-cols-3 items-center'>
+            <Divider className=' bg-white' />
+            <div className='text-center col-span-5 md:col-span-2 xl:col-span-1 '>
+              <p className='text-xl md:text-2xl lg:text-4xl font-medium text-white'>List of Award-Winning Carp</p>
+              <p className='md:text-lg lg:text-2xl font-medium text-white'>รายการรางวัลของเรา</p>
+            </div>
+            <Divider className='  bg-white' />
+          </div>
+
+          <RewardSwiper />
+
+          {/* <div className=' max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6  px-2  lg:px-0 md:pt-10 pb-6 h-full '>
+
+            <div className='max-w-[12rem] md:max-w-[13rem] mx-auto  bg-red-500'>
+              <Image src="/image/fish/award/1-new.png" alt="barley" width="100%" radius="none" />
+              <div className=' text-white'>
+                <p className='text-center '>TNPA ATKS 2023</p>
+                <p className='text-center text-sm'>Male Kokugyo Prize 85 BU</p>
+              </div>
+            </div>
+
+            <div className='max-w-[12rem] md:max-w-[13rem] mx-auto  bg-red-500'>
+              <Image src="/image/fish/award/2-new.png" alt="barley" width="100%" radius="none" />
+              <div className=' text-white'>
+                <p className='text-center '>TNPA ATKS 2023</p>
+                <p className='text-center text-sm'>Male Kokugyo Prize 85 BU</p>
+              </div>
+            </div>
+
+            <div className='max-w-[12rem] md:max-w-[13rem] mx-auto  bg-red-500 '>
+              <Image src="/image/fish/award/3-new.png" alt="barley" width="100%" radius="none" />
+              <div className=' text-white'>
+                <p className='text-center '>TNPA ATKS 2023</p>
+                <p className='text-center text-sm'>2nd Runner up Kohaku 40 Bu</p>
+              </div>
+            </div>
+
+            <div className='max-w-[12rem] md:max-w-[13rem] mx-auto bg-red-500'>
+              <Image src="/image/fish/award/g70-new.png" alt="barley" width="100%" radius="none" />
+              <div className=' text-white'>
+                <p className='text-center '>ZNA TKKG KOI SHOW 2022</p>
+                <p className='text-center text-sm '>Winner Hikari Moyomono & Hikari Utsurimono 70 Bu</p>
+              </div>
+            </div>
+
+            <div className='max-w-[12rem] md:max-w-[13rem] mx-auto bg-red-500'>
+              <Image src="/image/fish/award/s60-new.png" alt="barley" width="100%" radius="none" />
+              <div className=' text-white'>
+                <p className='text-center '>ZNA TKKG KOI SHOW 2022</p>
+                <p className='text-center text-sm'>Best in size Gosanke 60 bu</p>
+              </div>
+            </div>
+
+            <div className='max-w-[12rem] md:max-w-[13rem] mx-auto bg-red-500'>
+              <Image src="/image/fish/award/s80-new.png" alt="barley" width="100%" radius="none" />
+              <div className=' text-white'>
+                <p className='text-center '>ZNA TKKG KOI SHOW 2022</p>
+                <p className='text-center text-sm'>Winner Taisno Sanshoku 80 Bu</p>
+              </div>
+            </div>
+
+            <div className='max-w-[12rem] md:max-w-[13rem] mx-auto bg-red-500'>
+              <Image src="/image/fish/award/u75-new.png" alt="barley" width="100%" radius="none" />
+              <div className=' text-white'>
+                <p className='text-center '>ZNA TKKG KOI SHOW 2022</p>
+                <p className='text-center text-sm'>1st Runner up Utsuri Mono 75 Bu</p>
+              </div>
+            </div>
+
+            <div className='max-w-[12rem] md:max-w-[13rem] mx-auto bg-red-500'>
+              <Image src="/image/fish/award/w85-new.png" alt="barley" width="100%" radius="none" />
+              <div className=' text-white'>
+                <p className='text-center '>ZNA TKKG KOI SHOW 2022</p>
+                <p className='text-center text-sm'>2nd Runner up Kohaku 40 Bu</p>
+              </div>
+            </div>
+
+  
+
+          </div> */}
+
+          <div className='flex justify-center my-4 lg:mt-10'>
+            <a href={line} target='_blank'
+              className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+          text-lg px-10 py-1 rounded-xl '>
+              สนใจสอบถาม
+            </a>
+          </div>
+
+        </div>
+        <div className=' absolute bottom-0 left-0 right-0 z-0 max-w-[1780px] mx-auto'>
+          <Image src="/image/bg/section-3.png" alt="bg" radius="none" className='mx-auto' />
+        </div>
       </section>
 
-      <section id="04" className=' relative md:-top-6 xl:-top-16 md:px-6 lg:px-0'>
-        {/* lg:pb-20 */}
-        <div className='max-w-3xl gap-x-1 md:gap-x-0 mx-auto grid grid-cols-2 md:flex md:flex-row md:justify-between pb-6 md:pb-10 lg:pb-10'>
+      {/* <section id="04" className=' relative md:-top-6 xl:-top-16 md:px-6 lg:px-0'>
+        <div className='max-w-3xl gap-x-1 md:gap-x-0 mx-auto grid grid-cols-2 md:flex md:flex-row md:justify-between pb-6 md:pb-10 lg:pb-20'>
           <div className='max-w-[12rem] md:max-w-[13rem] mx-auto md:mx-[unset] h-full overflow-hidden'>
             <Image src="/image/fish/award/1.jpg" alt="barley" width="100%" radius="none" />
             <div className='bg-white text-black p-1 h-full'>
@@ -222,33 +318,17 @@ export default function Home() {
               <p className='text-center text-sm'>Male Kokugyo Prize 85 BU</p>
             </div>
           </div>
-
-          <div className=' hidden md:block max-w-[12rem] md:max-w-[13rem] mx-auto md:mx-[unset] h-full overflow-hidden'>
-            <Image src="/image/fish/award/3.jpg" alt="barley" width="100%" radius="none" />
-            <div className='bg-white text-black p-1 h-full'>
-              <p className='text-center text-sm'>TNPA ATKS 2023</p>
-              <p className='text-center text-sm'>2nd Runner up Kohaku 40 Bu</p>
-            </div>
-          </div>
         </div>
 
-        {/* <div className='block md:hidden max-w-[12rem] mx-auto h-full overflow-hidden pb-6'>
+        <div className='block md:hidden max-w-[12rem] mx-auto h-full overflow-hidden pb-6'>
           <Image src="/image/fish/award/2.jpg" alt="barley" width="100%" radius="none" />
           <div className='bg-white text-black p-1 '>
             <p className='text-center text-sm'>TNPA ATKS 2023</p>
             <p className='text-center text-sm'>Male Kokugyo Prize 85 BU</p>
           </div>
-        </div> */}
-
-        <div className='block md:hidden max-w-[12rem] mx-auto h-full overflow-hidden '>
-          <Image src="/image/fish/award/3.jpg" alt="barley" width="100%" radius="none" />
-          <div className='bg-white text-black p-1 '>
-            <p className='text-center text-sm'>TNPA ATKS 2023</p>
-            <p className='text-center text-sm'>2nd Runner up Kohaku 40 Bu</p>
-          </div>
         </div>
 
-        {/* <div className='max-w-3xl mx-auto gap-x-1 md:gap-x-0 grid grid-cols-2 md:flex md:flex-row  md:justify-between'>
+        <div className='max-w-3xl mx-auto gap-x-1 md:gap-x-0 grid grid-cols-2 md:flex md:flex-row  md:justify-between'>
           <div className='max-w-[12rem] md:max-w-[13rem] mx-auto md:mx-[unset] h-full overflow-hidden'>
             <Image src="/image/fish/award/3.jpg" alt="barley" width="100%" radius="none" />
             <div className='bg-white text-black  p-1 h-full'>
@@ -257,7 +337,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='hidden md:block relative md:-top-[10rem] max-w-[12rem] md:max-w-[13rem]' >
+          <div className='hidden md:block relative md:-top-[10rem] lg:-top-[12.5rem] max-w-[12rem] md:max-w-[13rem]' >
             <Image src="/image/fish/award/2.jpg" alt="barley" width="100%" radius="none" />
             <div className='bg-white text-black p-1 '>
               <p className='text-center text-sm'>TNPA ATKS 2023</p>
@@ -272,25 +352,16 @@ export default function Home() {
               <p className='text-center text-sm'>Winner Showa Sanshoku 65 BU</p>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className='flex justify-center my-8 md:mb-0 mt-0 xl:mt-10'>
-          <a href={line} target='_blank'
-            className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
-          text-lg px-10 py-1 rounded-xl '>
-            สนใจสอบถาม
-          </a>
-        </div> */}
-
-        <div className='flex justify-center my-8 md:my-0'>
+        <div className='flex justify-center my-8 md:mb-0 xl:mt-10'>
           <a href={line} target='_blank'
             className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
           text-lg px-10 py-1 rounded-xl '>
             สนใจสอบถาม
           </a>
         </div>
-
-      </section>
+      </section> */}
 
       <section id="05" className='px-2 md:px-6 mb-10 antialiased' >
         <Divider className='bg-white lg:w-[95%] mx-auto' />
@@ -304,7 +375,7 @@ export default function Home() {
             </a>
           </div>
 
-          <Image src="/image/banner/01.jpg" alt="banner" removeWrapper radius='none' className='w-full h-full'  />
+          <Image src="/image/banner/01.jpg" alt="banner" removeWrapper radius='none' className='w-full h-full' />
         </div>
 
         <div data-aos="fade-up" className='my-2 aspect-[3/1] relative max-w-3xl mx-auto mt-6 xl:mt-10 '>
@@ -314,7 +385,7 @@ export default function Home() {
               md:text-lg px-6 md:px-12 py-1 rounded-xl shadow-lg shadow-black/70  font-medium '>
               I.F.F SERVICE
             </a>
-            <p className='text-center text-sm md:text-base '>บริการสร้างบ่อ - บริการล้างบ่อกรอง - บริการฝากเลี้ยง - บริการรักษาปลา</p>
+            <p className='text-center text-sm md:text-base text-white '>บริการสร้างบ่อ - บริการล้างบ่อกรอง - บริการฝากเลี้ยง - บริการรักษาปลา</p>
           </div>
 
           <Image src="/image/banner/02.png" alt="banner" removeWrapper radius='none' className='w-full h-full object-cover' />
@@ -327,7 +398,7 @@ export default function Home() {
               md:text-lg px-6 md:px-12 py-1 rounded-xl shadow-lg shadow-black/70 font-medium '>
               รีวิวจากลูกค้า
             </a>
-            <p className='text-center text-sm md:text-base '>พร้อมบริการจัดส่งทั่วประเทศ รับประกันการจัดส่ง</p>
+            <p className='text-center text-sm md:text-base text-white '>พร้อมบริการจัดส่งทั่วประเทศ รับประกันการจัดส่ง</p>
           </div>
 
           <Image src="/image/banner/03.png" alt="banner" removeWrapper radius='none' className='w-full h-full object-cover object-top' />
