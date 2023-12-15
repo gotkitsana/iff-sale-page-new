@@ -295,7 +295,6 @@ export default function Home() {
               สนใจสอบถาม
             </a>
           </div>
-
         </div>
 
         <div className=' absolute bottom-0 left-0 right-0 z-0 max-w-[1780px] mx-auto'>
