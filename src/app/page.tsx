@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <div className='flex flex-col bg-black '>
+    <div className='flex flex-col '>
 
       <section id="01-new" className='h-screen w-screen relative'>
         <div className='h-full w-full absolute top-0 left-0 right-0 mx-auto'>

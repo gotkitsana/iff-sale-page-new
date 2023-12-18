@@ -49,7 +49,6 @@ const BgSlide = (props: Props) => {
       effect={'fade'}
       navigation={false}
       loop
-      allowTouchMove={false}
       autoplay={{
         delay: 7000,
         disableOnInteraction: false,
