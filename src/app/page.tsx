@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div  className='absolute bottom-[2px] right-[2vw] rotate-90 origin-top-right text-white z-[55]'>
+        <div  className='absolute bottom-[2vh] right-[2vw] rotate-90 origin-top-right text-white z-[55]'>
           <a onClick={() => handleScroll(fish?.current)}
           className=' flex flex-row justify-center items-center gap-x-2 cursor-pointer'  >
             <p className='text-[14px] antialiased'>SCROLL</p>

@@ -16,7 +16,7 @@ type Props = {}
 const dataSlide = [
   {
     img: "/image/main/1.jpg",
-    position:"object-center"
+    position: "object-center"
   },
   {
     img: "/image/main/2.jpg",
@@ -43,6 +43,7 @@ const dataSlide = [
 ]
 
 const BgSlide = (props: Props) => {
+
   return (
     <Swiper
       effect={'fade'}
@@ -50,7 +51,7 @@ const BgSlide = (props: Props) => {
       loop
       allowTouchMove={false}
       autoplay={{
-        delay: 3500,
+        delay: 7000,
         disableOnInteraction: false,
       }}
       modules={[EffectFade, Autoplay]}
@@ -58,8 +59,11 @@ const BgSlide = (props: Props) => {
     >
       {dataSlide.map((item, index) => (
         <SwiperSlide key={index} className='h-full w-full'>
-          <Image src={item.img} alt="1" removeWrapper radius="none"
-            className={`w-full h-full ${item.position} object-cover animate-zoom-out brightness-50`} />
+          {({ isActive }) => (
+            <Image src={item.img} alt="1" removeWrapper radius="none"
+              className={`w-full h-full ${item.position} 
+                ${isActive ? 'animate-zoom-out' : "animate-none"} object-cover brightness-50`} />
+          )}
         </SwiperSlide>
       ))}
     </Swiper>
