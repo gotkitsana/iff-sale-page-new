@@ -1,15 +1,121 @@
 'use client'
 import { Button, Divider, Image } from '@nextui-org/react'
-import { useRef } from 'react';
 import Footer from './Footer';
 import RewardSwiper from './RewardSwiper';
+import BgSlide from './BgSlide';
+import Link from 'next/link';
+import { useRef } from 'react';
 
 export default function Home() {
   const line = 'https://line.me/R/ti/p/@022awchp'
+  const fish = useRef(null)
+
+  const handleScroll = (ref:any) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div className='flex flex-col scroll-smooth bg-black'>
-      <section id="01" className=' h-full w-full bg-[url(/image/bg/section-1.jpg)] bg-center bg-cover'>
+    <div className='flex flex-col bg-black '>
+
+      <section id="01-new" className='h-screen w-screen relative'>
+        <div className='h-full w-full absolute top-0 left-0 right-0 mx-auto'>
+          <BgSlide />
+        </div>
+
+        <div className='flex flex-col justify-center items-center h-full'>
+          <div className='flex justify-center my-4 '>
+            <Image src="/logo-new.png" alt="logo" width="100%" className='max-w-[15rem]' />
+          </div>
+
+          <p className=' relative z-50 text-center font-medium text-3xl md:text-4xl text-white'>สอบถามสายพันธ์ และ ราคาปลา</p>
+          <div className=' relative z-50 flex flex-col items-center gap-y-4 my-4'>
+            <a href={line} target='_blank'
+              className=' hover:brightness-125 text-white bg-gradient-to-b from-[#A48028] to-[#73591A] 
+          text-lg px-14 py-1 rounded-xl '>
+              คลิกเลย
+            </a>
+            <p className='text-yellow-500'>กดรับราคาพิเศษ ภายในวันที่ 30 ธ.ค. นี้เท่านั้น</p>
+          </div>
+        </div>
+
+        <div  className='absolute bottom-[2px] right-[2vw] rotate-90 origin-top-right text-white z-[55]'>
+          <a onClick={() => handleScroll(fish?.current)}
+          className=' flex flex-row justify-center items-center gap-x-2 cursor-pointer'  >
+            <p className='text-[14px] antialiased'>SCROLL</p>
+            <div className='flex'>
+              <svg className=' animate-scroll' xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8.061 14.707">
+                <path id="scroll_arrow" d="M4176.148,3082.3l7,7,7-7" transform="translate(-3081.95 4190.502) rotate(-90)" fill="none" stroke="#fff" strokeWidth="1" />
+              </svg>
+
+              <svg className=' animate-scroll' xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8.061 14.707">
+                <path id="scroll_arrow" d="M4176.148,3082.3l7,7,7-7" transform="translate(-3081.95 4190.502) rotate(-90)" fill="none" stroke="#fff" strokeWidth="1" />
+              </svg>
+
+              <svg className=' animate-scroll' xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8.061 14.707">
+                <path id="scroll_arrow" d="M4176.148,3082.3l7,7,7-7" transform="translate(-3081.95 4190.502) rotate(-90)" fill="none" stroke="#fff" strokeWidth="1" />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+      </section>
+
+      <section id="fish" ref={fish} className='  h-full w-full bg-[url(/image/bg/section-1.jpg)] bg-center bg-cover pt-2'>
+        <div className=' relative flex flex-col max-w-4xl mx-auto pt-2 pb-10 md:h-[53rem]'>
+          <div className='flex flex-col md:grid md:grid-cols-2'>
+            <Image src="/image/fish/kohaku.png" alt="fish" width="100%" className='max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-[unset]' />
+
+            <div className='flex flex-row items-center gap-x-6 px-10 md:px-0 '>
+              <Divider orientation="vertical" className='h-28 w-[1px] bg-white' />
+              <div className='text-white'>
+                <p className=' font-medium text-xl'>KOHAKU</p>
+                <p className='text-sm md:text-base py-1 font-[300]'>ถือว่าเป็นราชินีแห่งปลาคาร์ฟ เป็นปลาที่มี 2 สี</p>
+                <p className='text-sm md:text-base font-[300]'>ที่มีสีแดงวางอยู่บนพื้นหลังขาว</p>
+              </div>
+            </div>
+          </div>
+
+          <div className='flex flex-col-reverse md:grid md:grid-cols-2 md:absolute md:top-[14rem]'>
+            <div className=' flex flex-row items-center gap-x-6 px-10 md:px-0'>
+              <Divider orientation="vertical" className='h-32 w-[1px] bg-white' />
+              <div className='text-white'>
+                <p className=' font-medium text-xl'>TANCHO</p>
+                <p className='text-sm md:text-base pt-1 font-[300]'>
+                  ปลาตันโจที่ดี ควรมีสีแดงกลม และขนาดใหญ่ได้สัดส่วนบนหัวเท่านั้น
+                  แม้รูปทรงไม่ได้เป็นทรงกลม และไม่มีลวดลายสีแดงที่จุดอื่นๆ ที่ลำตัว
+                </p>
+              </div>
+            </div>
+
+            <Image src="/image/fish/tancho.png" alt="fish" width="100%" className='max-w-sm md:max-w-md mx-auto md:mr-auto md:ml-[unset]' />
+          </div>
+
+          <div className='flex flex-col md:grid md:grid-cols-2 md:absolute md:bottom-0'>
+            <Image src="/image/fish/sanke-re.png" alt="fish" width="100%"
+              className='max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-[unset] '
+              style={{
+                transform: "scaleX(-1)"
+              }} />
+
+            <div className='flex flex-row items-center gap-x-6 px-10 md:px-0'>
+              <Divider orientation="vertical" className='h-32 w-[1px] bg-white' />
+              <div className='text-white'>
+                <p className=' font-medium text-xl'>SANKE</p>
+                <p className='text-sm md:text-base pt-1 font-[300]'>
+                  หรือ TAISHO SANSHOKU ปลาคาร์ฟที่มี 3 สี สีขาว สีแดง และสีดำ สีดำบนตัวปลานั้น
+                  ควรจะดำสนิทและดวงใหญ่ไม่มีสีดำบนส่วนหัว รวมทั้งไม่มีสีแดง บนครีบและหาง
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section id="01" className='  h-full w-full bg-[url(/image/bg/section-1.jpg)] bg-center bg-cover'>
         <div className='flex justify-center my-4 '>
           <Image src="/logo-new.png" alt="logo" width="100%" className='max-w-[12.5rem]' />
         </div>
@@ -73,7 +179,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="02" className=' relative z-50 antialiased h-full w-full bg-[url(/image/bg/section-2.png)] bg-left md:bg-center bg-cover'>
         <div className='flex flex-col items-center bg-black/20 pb-10 md:pt-10' >
@@ -205,7 +311,7 @@ export default function Home() {
       </section> */}
 
       <section id="03" className='antialiased h-full w-full relative mb-4'>
-        
+
         <div className='bg-black/40 relative z-50 pb-10'>
           <div className='pb-6 pt-8 lg:pt-14 w-full grid grid-cols-7 md:grid-cols-4 xl:grid-cols-3 items-center'>
             <Divider className=' bg-white' />

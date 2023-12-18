@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import {nextui} from "@nextui-org/react";
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   content: [
@@ -15,6 +15,33 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      animation: {
+        'zoom-out': 'zoom-out 15s linear infinite',
+        'scroll': 'scroll_arrow 2s linear infinite'
+      },
+      keyframes: {
+        'zoom-out': {
+          '0%': {
+            transform: 'scale(1.25, 1.25)'
+          },
+          "100%": {
+            transform: 'scale(1, 1)'
+          }
+        },
+        scroll_arrow: {
+          '0%': {
+            opacity: "1"
+          },
+
+          "50%": {
+            opacity: "0.35"
+          },
+          "90%": {
+            opacity: "0.35"
+          }
+        }
+      },
+
     },
   },
   darkMode: "class",
