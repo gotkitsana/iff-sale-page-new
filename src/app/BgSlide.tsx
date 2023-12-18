@@ -38,7 +38,7 @@ const dataSlide = [
   },
   {
     img: "/image/main/7.jpg",
-    position: "hidden md:block md:object-left xl:object-center"
+    position: "hidden xl:block xl:object-center"
   },
 ]
 
@@ -48,7 +48,7 @@ const BgSlide = (props: Props) => {
       effect={'fade'}
       navigation={false}
       loop
-      draggable={false}
+      allowTouchMove={false}
       autoplay={{
         delay: 5000,
         disableOnInteraction: false,
