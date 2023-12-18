@@ -1,10 +1,11 @@
 'use client'
-import { Button, Divider, Image } from '@nextui-org/react'
+import { Divider, Image } from '@nextui-org/react'
+import dynamic from 'next/dynamic';
 import Footer from './Footer';
-import RewardSwiper from './RewardSwiper';
-import BgSlide from './BgSlide';
-import Link from 'next/link';
 import { useRef } from 'react';
+
+const BgSlide = dynamic(() => import("./BgSlide"))
+const RewardSwiper = dynamic(() => import("./RewardSwiper"))
 
 export default function Home() {
   const line = 'https://line.me/R/ti/p/@022awchp'
@@ -64,7 +65,7 @@ export default function Home() {
 
       </section>
 
-      <section id="fish" ref={fish} className='  h-full w-full bg-[url(/image/bg/section-1.jpg)] bg-center bg-cover pt-2'>
+      <section id="fish" ref={fish} className='  h-full w-full bg-[url(/image/bg/section-1.webp)] bg-center bg-cover pt-2'>
         <div className=' relative flex flex-col max-w-4xl mx-auto pt-2 pb-10 md:h-[53rem]'>
           <div className='flex flex-col md:grid md:grid-cols-2'>
             <Image src="/image/fish/kohaku.png" alt="fish" width="100%" className='max-w-sm md:max-w-md mx-auto md:ml-auto md:mr-[unset]' />
@@ -115,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section id="01" className='  h-full w-full bg-[url(/image/bg/section-1.jpg)] bg-center bg-cover'>
+      {/* <section id="01" className='  h-full w-full bg-[url(/image/bg/section-1.webp)] bg-center bg-cover'>
         <div className='flex justify-center my-4 '>
           <Image src="/logo-new.png" alt="logo" width="100%" className='max-w-[12.5rem]' />
         </div>
@@ -181,7 +182,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section id="02" className=' relative z-50 antialiased h-full w-full bg-[url(/image/bg/section-2.png)] bg-left md:bg-center bg-cover'>
+      <section id="02" className=' relative z-50 antialiased h-full w-full bg-[url(/image/bg/section-2.webp)] bg-left md:bg-center bg-cover'>
         <div className='flex flex-col items-center bg-black/20 pb-10 md:pt-10' >
           <p data-aos="fade-up"
             className={`text-2xl md:text-3xl lg:text-4xl my-10 font-medium text-white`}>
@@ -296,7 +297,7 @@ export default function Home() {
             </div>
           </div>
           <div className=' absolute bottom-0 left-0 right-0 z-0 max-w-[1980px] mx-auto'>
-            <Image src="/image/bg/section-3.png" alt="bg" radius="none" className='mx-auto' />
+            <Image src="/image/bg/section-3.webp" alt="bg" radius="none" className='mx-auto' />
           </div>
         </div>
 
@@ -404,7 +405,7 @@ export default function Home() {
         </div>
 
         <div className=' absolute bottom-0 left-0 right-0 z-0 max-w-[1980px] mx-auto'>
-          <Image src="/image/bg/section-3.png" alt="bg" radius="none" className='mx-auto' />
+          <Image src="/image/bg/section-3.webp" alt="bg" radius="none" className='mx-auto' />
         </div>
 
       </section>
@@ -496,7 +497,7 @@ export default function Home() {
             <p className='text-center text-sm md:text-base text-white '>บริการสร้างบ่อ - บริการล้างบ่อกรอง - บริการฝากเลี้ยง - บริการรักษาปลา</p>
           </div>
 
-          <Image src="/image/banner/02.png" alt="banner" removeWrapper radius='none' className='w-full h-full object-cover' />
+          <Image src="/image/banner/02.webp" alt="banner" removeWrapper radius='none' className='w-full h-full object-cover' />
         </div>
 
         <div data-aos="fade-up" className='my-2 aspect-[3/1] relative max-w-3xl mx-auto mt-6 xl:mt-10 '>
@@ -509,11 +510,9 @@ export default function Home() {
             <p className='text-center text-sm md:text-base text-white '>พร้อมบริการจัดส่งทั่วประเทศ รับประกันการจัดส่ง</p>
           </div>
 
-          <Image src="/image/banner/03.png" alt="banner" removeWrapper radius='none' className='w-full h-full object-cover object-top' />
+          <Image src="/image/banner/03.webp" alt="banner" removeWrapper radius='none' className='w-full h-full object-cover object-top' />
         </div>
       </section>
-
-
       <Footer line={line} />
 
 

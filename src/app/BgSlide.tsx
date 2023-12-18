@@ -15,15 +15,15 @@ type Props = {}
 
 const dataSlide = [
   {
-    img: "/image/main/1.jpg",
+    img: "/image/main/1.webp",
     position: "object-center"
   },
   {
-    img: "/image/main/2.jpg",
+    img: "/image/main/2.webp",
     position: "object-left md:object-center"
   },
   {
-    img: "/image/main/3.jpg",
+    img: "/image/main/3.webp",
     position: "object-right md:object-center"
   },
   // {
